@@ -7,8 +7,9 @@ from datetime import datetime
 import time
 
 # Set the page title
-st.title("Generative AI Interest by State - Heat Map")
-st.write("This map visualizes interest in Generative AI by state over time using a heat map. Use the slider below to explore how interest has evolved.")
+st.title("Generative AI Interest by State")
+st.write("This heat map visualizes interest in Generative AI by state over time. The data was obtained from Google Trends with a query of 'Generative AI'.")
+st.write("Use the slider below to explore how interest has evolved by state over time.")
 
 # Load CSV files
 @st.cache_data

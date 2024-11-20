@@ -31,7 +31,7 @@ state_coords = geo_data.set_index("Name")[["latitude", "longitude"]].to_dict(ori
 data = data.set_index("State").transpose()
 
 # Convert index to datetime objects
-data.index = pd.to_datetime(data.index, format="%m/%d/%Y")
+data.index = pd.to_datetime(data.index, format="%m/%d/%y")
 
 # Convert datetime index to Python `datetime` objects for Streamlit slider
 dates = [date.to_pydatetime() for date in data.index]
@@ -86,3 +86,5 @@ HeatMap(heatmap_points, min_opacity=0.4, max_val=100, radius=20, blur=15).add_to
 
 # Display the heat map in Streamlit
 st_folium(heatmap_map, width=800, height=400)
+
+#%%

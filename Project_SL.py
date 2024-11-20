@@ -7,8 +7,9 @@ import folium
 from streamlit_folium import st_folium
 
 # Set the page title
-st.title("Power Plants and Data Centers")
-st.write("This application visualizes power plants and data centers on the same map, with filtering options for reporting year, plant type, and data center companies.")
+st.title("Power Plant and Data Center Locations")
+st.write("This application displays power plants and data centers on the same map.")
+st.write("Use the filters on the left to filter by power plant type, data center company, or reporting year of power generation.")
 
 # Connect to the SQLite database for power plants
 DATABASE = "pudl_subset.sqlite"
@@ -89,8 +90,8 @@ st.sidebar.header("Filter Options")
 
 # Power plant toggles
 display_power_plants = st.sidebar.checkbox("Display Power Plants", value=True)
-scale_dots = st.sidebar.checkbox("Scale Power Plant Markers by Generation", value=True)
-color_power_plant_markers = st.sidebar.checkbox("Color Power Plant Markers", value=True)  # New toggle
+scale_dots = st.sidebar.checkbox("Scale Power Plant Markers by Power Generation Amount", value=True)
+color_power_plant_markers = st.sidebar.checkbox("Color Power Plant Markers by Type", value=True)
 
 # Data center toggle
 display_data_centers = st.sidebar.checkbox("Display Data Centers", value=True)
@@ -147,7 +148,7 @@ for company, color in data_center_color_map.items():
     )
 
 # Create a Folium map
-st.subheader("Combined Map of Power Plants and Data Centers")
+st.subheader("Map of Power Plants and Data Centers")
 m = folium.Map(location=[38, -92], zoom_start=4, tiles="cartodbdark_matter")
 
 # Add power plants to the map if the toggle is enabled

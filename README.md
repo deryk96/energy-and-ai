@@ -11,10 +11,15 @@ Short Introduction
 - [Credit/Acknowledgment](#creditacknowledgment)
 
 ## About
-Add a detailed introduction about the project here, everything you want the reader to know.
+This project investigates the energy consumption of generative AI usage and its impact on global power demands, focusing on data centers in the United States. We examined whether the growth in energy consumption from AI usage outpaces the adoption of green energy. Utilizing various datasets and visualization tools, the analysis addresses the energy demands of generative AI and potential sustainability challenges.
 
 ## Packages Used
-Write about how to use this project.
+Datasette: For quick exploration and querying of datasets.
+Kaggle API: To retrieve and process large datasets.
+Streamlit: For creating interactive visualizations, including power plant and data center maps.
+Folium: For map-based visualizations.
+Zippopotamus API: For ZIP code-based geographic correlation.
+SERPAPI: To programmatically collect Google Trends data for generative AI interest.
 
 ## File Structure
 Add a file structure here with the basic details about files, below is an example.
@@ -24,7 +29,13 @@ Add a file structure here with the basic details about files, below is an exampl
 | 1  | index | Entry point
 
 ##  Resources
-Add important resources here
+Data Sources:
+PUDL (Public Utility Data Liberation)
+Kaggle datasets (e.g., yearly power generation by state, data center locations)
+Google Trends data on generative AI interest (via SERPAPI).
+APIs:
+SERPAPI for Google Trends data collection.
+Zippopotamus API for geographic data.
 
 ##  Gallery
 Pictures of your project.

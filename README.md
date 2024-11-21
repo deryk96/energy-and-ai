@@ -23,7 +23,7 @@ Below is a table describing what each of the files in this repository is.
 
 | No | File Name | Details 
 |----|------------|-------|
-| 1  | Analysis.ipynb | Noah
+| 1  | Analysis.ipynb | This notebook was used to process/group the data and produce graphics
 | 2  | Data_Center_Locations | Folder containing CSVs with locations of data centers of large tech companies
 | 3  | DataImport.ipynb | This notebook is used as an example on how to import the tables from pudl_subset.sqlite and describes what is in each of these tables.
 | 4  | desktop.ini | MG? Don't know what this is, might be able to delete it.
@@ -35,7 +35,7 @@ Below is a table describing what each of the files in this repository is.
 | 10 | Total_US_Interest.csv | CSV containing normalized data on how popular the phrase 'generative AI' was across the US every week since 17 November, 2019.
 | 11 | US_GeoCode.csv | CSV containing the center latitude/longitude of every state in the US.
 | 12 | US_Trends_Sorted | CSV containing how popular the term 'generative AI' was across each state in the US every month since November 2022.
-| 13 | ZIP_Production.ipynb | Noah
+| 13 | ZIP_Production.ipynb | This notebook was used with the zippopotomus API to analyze based on datacenter zip codes
 
 ## Streamlit Tutorial
 Below are the commands needed to run each of our Streamlit apps (must have Streamlit installed on your machine):

@@ -5,7 +5,6 @@
 - [Packages/Tools Used](#packagestools-used)
 - [File Structure](#file-structure) 
 - [Data Sources](#data-sources)
-- [Gallery](#gallery)
 - [Credit/Acknowledgment](#creditacknowledgment)
 
 ## About
@@ -20,31 +19,39 @@ This project investigates the energy consumption of generative AI usage and its 
 - SERPAPI: To programmatically collect Google Trends data for generative AI interest.
 
 ## File Structure
-Add a file structure here with the basic details about files, below is an example.
+Below is a table describing what each of the files in this repository is.
 
 | No | File Name | Details 
 |----|------------|-------|
 | 1  | Analysis.ipynb | Noah
 | 2  | Data_Center_Locations | Folder containing CSVs with locations of data centers of large tech companies
 | 3  | DataImport.ipynb | This notebook is used as an example on how to import the tables from pudl_subset.sqlite and describes what is in each of these tables.
-| 4  | desktop.ini | ?
+| 4  | desktop.ini | MG? Don't know what this is, might be able to delete it.
 | 5  | GoogleTrends_SL.py | MG
 | 6  | PowerGen_SL.py | MG
-| 7  | Project_SL.py | MG
-| 8  | pudl_subset.sqlite | SQLite database containing the subset of data that was pulled from Kaggle.
-| 9  | Total_US_Interest.csv | CSV containing normalized data on how popular the phrase 'generative AI' was across the US every week since 17 November, 2019.
-| 10 | US_GeoCode.csv | CSV containing the center latitude/longitude of every state in the US.
-| 11 | US_Trends_Sorted | CSV containing how popular the term 'generative AI' was across each state in the US every month since November 2022.
-| 12 | ZIP_Production.ipynb | Noah
+| 7  | Products_Outputs | Folder containing graphs, photos, and products output from this project.
+| 8  | Project_SL.py | MG
+| 9  | pudl_subset.sqlite | SQLite database containing the subset of data that was pulled from Kaggle.
+| 10 | Total_US_Interest.csv | CSV containing normalized data on how popular the phrase 'generative AI' was across the US every week since 17 November, 2019.
+| 11 | US_GeoCode.csv | CSV containing the center latitude/longitude of every state in the US.
+| 12 | US_Trends_Sorted | CSV containing how popular the term 'generative AI' was across each state in the US every month since November 2022.
+| 13 | ZIP_Production.ipynb | Noah
 
+## Streamlit Tutorial
+Below are the commands needed to run each of our Streamlit apps (must have Streamlit installed on your machine):
+- GoogleTrends_SL.py: python -m streamlit run GoogleTrends_SL.py
+- PowerGen_SL.py: python -m streamlit run PowerGen_SL.py
+- Project_SL.py: python -m streamlit run Project_SL.py
+
+Once you run one of these commands, the Streamlit app will launch in your default web browser.
 
 ##  Data Sources
-- PUDL (Public Utility Data Liberation)
-- Kaggle datasets (e.g., yearly power generation by state, data center locations)
-- Google Trends data on generative AI interest (via SERPAPI).
-
-##  Gallery
-Pictures of your project.
+- [PUDL (Public Utility Data Liberation) from Kaggle](https://www.kaggle.com/datasets/catalystcooperative/pudl-project)
+  - Acquired through a Kaggle Notebook that can be accessed at [this link](https://www.kaggle.com/code/deryk96/pudl-data-curation).
+  - The notebook shows how to query the PUDL dataset and pull the subset of data we used for this project.
+  - DataImport.ipynb shows how to import pudl_subset.sqlite into Pandas.
+- [Data Center Locations of Top Tech Companies from Kaggle](https://www.kaggle.com/datasets/mauryansshivam/list-of-data-centers-of-top-tech-companies)
+- [Google Trends data from SERPAPI](https://serpapi.com/google-trends-api)
 
 ## Credit/Acknowledgment
 - Deryk Clary
